@@ -11,15 +11,9 @@ namespace DotnetBasic
         {
             try
             {
-                UserInput userInput = new UserInput();
-                SubcriberClass1 sub1 = new SubcriberClass1();
-                SubcriberClass2 sub2 = new SubcriberClass2();
-                userInput.doMath += sub1.PrintAddOne;
-                userInput.doMath += sub2.PrintMinosOne;
-
-                userInput.onUserInputed += sub1.PrintAddOneHandler;
-                userInput.onUserInputed += sub2.PrintMinosOneHandler;
-                userInput.Run();
+                int a = 10;
+                Console.WriteLine($"{a} add one = {a.AddOne()}");
+                Console.WriteLine($"{a} minos one = {a.MinosOne()}");
 
             }
             catch (Exception ex) { 
