@@ -1,7 +1,9 @@
-﻿using System.Diagnostics;
+﻿using System.ComponentModel;
+using System.Diagnostics;
 using DotnetBasic.Day1;
 using DotnetBasic.Day2;
 using DotnetBasic.Day3;
+using DotnetBasic.Day4;
 
 namespace DotnetBasic
 {
@@ -11,10 +13,8 @@ namespace DotnetBasic
         {
             try
             {
-                int a = 10;
-                Console.WriteLine($"{a} add one = {a.AddOne()}");
-                Console.WriteLine($"{a} minos one = {a.MinosOne()}");
-
+                var practice = new Practice();
+                practice.Run();
             }
             catch (Exception ex) { 
                 Console.WriteLine(ex.ToString());
